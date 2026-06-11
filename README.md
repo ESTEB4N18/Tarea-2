@@ -24,12 +24,6 @@ Modo desarrollo:
 npm run dev
 ```
 
-Modo normal:
-
-```bash
-npm start
-```
-
 El servidor usa el puerto `4321`.
 
 ## Rutas
@@ -66,36 +60,72 @@ xh GET :4321/mundiales
 
 ![Captura de xh GET /mundiales](docs/capturas/xh-get-mundiales.png)
 
-## Respuestas de error esperadas
+### Captura: GET /mundiales include full
 
-Mundial inexistente:
+Comando usado:
 
-```json
-{
-  "error": "Mundial no encontrado"
-}
+```bash
+xh GET :4321/mundiales include==full
 ```
 
-Parametro `include` invalido:
+![Captura de xh GET /mundiales include full](docs/capturas/xh-get-mundiales-full.png)
 
-```json
-{
-  "error": "Parametro include invalido"
-}
+### Captura: GET /mundial qatar
+
+Comando usado:
+
+```bash
+xh GET :4321/mundial/qatar-2022
 ```
 
-Busqueda con menos de 3 caracteres:
+![Captura de xh GET /mundial qatar](docs/capturas/xh-get-mundial-qatar.png)
 
-```json
-{
-  "error": "El texto debe tener al menos 3 caracteres"
-}
+### Captura: GET /mundial inexistente
+
+Comando usado:
+
+```bash
+xh GET :4321/mundial/inexistente
 ```
 
-Ruta inexistente:
+![Captura de xh GET /mundial qatar](docs/capturas/xh-get-mundial-inexistente.png)
 
-```json
-{
-  "error": "Ruta no encontrada"
-}
+### Captura: GET /campeon argentina 
+
+Comando usado:
+
+```bash
+xh GET :4321/campeon/Argentina
 ```
+
+![Captura de xh GET /mundial qatar](docs/capturas/xh-get-campeon-argentina.png)
+
+### Captura: GET /random
+
+Comando usado:
+
+```bash
+xh GET :4321/random
+```
+
+![Captura de xh GET /mundial qatar](docs/capturas/xh-get-random.png)
+
+### Captura: GET /search final
+
+Comando usado:
+
+```bash
+xh GET :4321/search/final
+```
+
+![Captura de xh GET /mundial qatar](docs/capturas/xh-get-search-final.png)
+
+### Captura: GET /search ab
+
+Comando usado:
+
+```bash
+xh GET :4321/search/ab
+```
+
+![Captura de xh GET /mundial qatar](docs/capturas/xh-get-search-ab.png)
