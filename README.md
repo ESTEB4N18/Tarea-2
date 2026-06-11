@@ -56,6 +56,16 @@ xh GET :4321/search/final
 xh GET :4321/search/ab
 ```
 
+### Captura: GET /mundiales
+
+Comando usado:
+
+```bash
+xh GET :4321/mundiales
+```
+
+![Captura de xh GET /mundiales](docs/capturas/xh-get-mundiales.png)
+
 ## Respuestas de error esperadas
 
 Mundial inexistente:
@@ -89,20 +99,3 @@ Ruta inexistente:
   "error": "Ruta no encontrada"
 }
 ```
-
-## Propuesta de commits incrementales
-
-1. Inicializar proyecto Node
-2. Configurar Express
-3. Crear base SQLite
-4. Insertar datos de mundiales
-5. Endpoint GET /
-6. Endpoint GET /mundiales
-7. Endpoint GET /mundial/:slug
-8. Endpoint GET /campeon/:pais
-9. Endpoint GET /random
-10. Endpoint GET /search/:text
-11. Validaciones con Zod
-12. Middleware 404
-13. Imagenes estaticas
-14. README y referencias
