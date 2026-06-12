@@ -7,9 +7,9 @@
     "dev": "nodemon src/app.js",
     "start": "node src/app.js"
   },
+  "type": "module",
   "dependencies": {
     "express": "^5.1.0",
-    "sqlite3": "^5.1.7",
     "zod": "^3.25.76"
   },
   "devDependencies": {

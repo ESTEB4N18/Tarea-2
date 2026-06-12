@@ -1,8 +1,8 @@
 # Referencias
 
 - Node.js Documentation: https://nodejs.org/docs/latest/api/
+- Node.js Native SQLite (node:sqlite): https://nodejs.org/docs/latest/api/sqlite.html
 - Express Documentation: https://expressjs.com/
-- sqlite3 npm package: https://www.npmjs.com/package/sqlite3
 - SQLite Documentation: https://www.sqlite.org/docs.html
 - Zod Documentation: https://zod.dev/
 - FIFA World Cup en Wikipedia: https://en.wikipedia.org/wiki/FIFA_World_Cup
